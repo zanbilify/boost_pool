@@ -1,0 +1,22 @@
+[package]
+name = "boost_pool"
+description = "Boost C++ library boost_pool packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_pool"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_pool"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_integer = { version = "0.1.0", path = "../boost_integer" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_winapi = { version = "0.1.0", path = "../boost_winapi" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
